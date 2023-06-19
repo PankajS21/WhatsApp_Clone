@@ -24,7 +24,7 @@ min-width:450px;
 `
 
 const RightComponent=styled(Box)`
-width:70%;
+width:100vw;
 min-width:300px;
 height:100%;
 border-left: 1px solid rgba(0,0,0,0.14);
