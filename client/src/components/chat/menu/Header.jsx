@@ -6,7 +6,7 @@ import Headermenu from './Headermenu';
 import InfoDrawer from '../../drawer/InfoDrawer';
 
 const Component = styled(Box)`
-height:44px;
+height:36px;
 background:#ededed;
 padding:10px 16px;
 display:flex;
@@ -49,7 +49,7 @@ export default function Header() {
         <Image src={account.picture} alt="dp" onClick={toggledrawer} />
         <Wrapper>
           <ChatIcon />
-          <Headermenu />
+          <Headermenu setOpenDrawer={setOpenDrawer}/>
         </Wrapper>
       </Component>
       <InfoDrawer open={openDrawer} setOpen={setOpenDrawer}/>

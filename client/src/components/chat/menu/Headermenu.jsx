@@ -10,7 +10,7 @@ padding:15px 60px 5px 24px;
 color:#4A4A4A;
 `
 
-export default function Headermenu() {
+export default function Headermenu({setOpenDrawer}) {
 
     const [open, setOpen] = useState(null);
 
@@ -40,7 +40,7 @@ export default function Headermenu() {
                     horizontal: 'right'
                 }}
             >
-                <MenuOption onClick={handleClose}>Profile</MenuOption>
+                <MenuOption onClick={()=>{handleClose(); setOpenDrawer(true);}}>Profile</MenuOption>
             </Menu>
         </>
     )
